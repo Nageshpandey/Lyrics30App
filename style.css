@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+*{
+    font-family: "Poppins", sans-serif;
+}
+body{
+    background-image: url(image/claus-grunstaudl-dKeB0-M9iiA-unsplash.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    position: relative;
+    
+   
+}
+header .container{
+    padding: 1rem 0;
+    text-align: center;
+    color: white;
+}
+form input,
+form button{
+    outline: none;
+    border: none;
+    padding: 0.8rem;
+    
+    font-size: 1rem;
+}
+form input{
+    width: 55%;
+    border-radius: 0.5rem  0.5rem ;
+    margin-right: 2px;
+    border-bottom: 1px ;
+}
+form button{
+    border: 1px solid;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .3s;
+    padding: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 10px;
+    margin: 8px;
+    font-size: 20px;
+    
+}
+.bar {
+    border-radius: 100px;
+    padding: 14px 16px;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: .3s;
+  }
+  .result{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: aliceblue;
+
+  }
+  .song-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+  
+  .song-list li {
+    margin-bottom: 20px;
+    width: 500px;
+    justify-content: space-evenly;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-size: 18px;
+    text-decoration: overline;
+    position: relative;
+  }
+  
+  .song-list li::after {
+    content: '';
+    position: absolute;
+    right: -20px;
+    left: -20px;
+    bottom: -4px;
+    height: 3px;
+    background:rgb(12, 147, 35);
+    display: inline-block;
+  }
+  
+  .song-list li div {
+    float: left;
+  }
+  
+  .song-list li span {
+    float: right;
+    background: #9e6720;
+    border: none;
+    font-size: 12px;
+    border-radius: 12px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 500;
+    padding: 4px 10px;
+    text-transform: capitalize;
+  }
+  
